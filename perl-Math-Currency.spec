@@ -21,7 +21,7 @@ BuildRequires:	perl(Math::BigFloat) >= 1.27
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl(Test::More) >= 0.02
 %endif
-BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

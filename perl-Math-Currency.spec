@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	Currency
+%define		pdir	Math
+%define		pnam	Currency
 Summary:	Math::Currency - exact currency math with formatting and rounding
 Summary(pl):	Math::Currency - dok³adne obliczenia na walutach z formatowaniem i zaokr±glaniem
 Name:		perl-Math-Currency

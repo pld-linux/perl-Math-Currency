@@ -1,0 +1,25 @@
+diff -Nur Math-Currency-0.39.orig/Currency.pm Math-Currency-0.39/Currency.pm
+--- Math-Currency-0.39.orig/Currency.pm	2003-12-04 00:02:38.000000000 +0100
++++ Math-Currency-0.39/Currency.pm	2003-12-04 00:02:53.000000000 +0100
+@@ -1,4 +1,4 @@
+-#!/usr2/local/bin/perl -w
++#!/usr/bin/perl -w
+ #
+ # PROGRAM:	Math::Currency.pm	# - 04/26/00 9:10:AM
+ # PURPOSE:	Perform currency calculations without floating point
+@@ -555,4 +555,4 @@
+  Math::BigFloat
+  Math::BigInt
+ 
+-=cut
+\ Brak znaku nowej linii na koñcu pliku
++=cut
+diff -Nur Math-Currency-0.39.orig/t/test.t Math-Currency-0.39/t/test.t
+--- Math-Currency-0.39.orig/t/test.t	2003-12-04 00:02:38.000000000 +0100
++++ Math-Currency-0.39/t/test.t	2003-12-04 00:03:11.000000000 +0100
+@@ -1,4 +1,4 @@
+-#!/bin/perl -w
++#!/usr/bin/perl -w
+ # Before `make install' is performed this script should be runnable with
+ # `make test'. After `make install' it should work as `perl test.pl'
+ 

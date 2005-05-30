@@ -8,15 +8,16 @@
 Summary:	Math::Currency - exact currency math with formatting and rounding
 Summary(pl):	Math::Currency - dok³adne obliczenia na walutach z formatowaniem i zaokr±glaniem
 Name:		perl-Math-Currency
-Version:	0.39
+Version:	0.40
 Release:	1
 License:	GPL v1+ or Artistic except commercial distribution on CD-ROM etc.
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f53c41ec41be1bd576def284845e0b16
+# Source0-md5:	4ac52e2fb15d84528e210379bd43a323
 Patch0:		%{name}-perl_paths.patch
 BuildRequires:	perl-Math-BigInt
 BuildRequires:	perl(Math::BigFloat) >= 1.27
+BuildRequires:	perl-Module-Build
 %if %{with tests}
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl(Test::More) >= 0.02
@@ -57,17 +58,17 @@ Math::BigInt.
 %patch0 -p1
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
-%{__make}
+%{__perl} Build.PL \
+	installdirs=vendor \
+	destdir=$RPM_BUILD_ROOT
+%{__perl} Build
 
-%{?with_tests:%{__make} test}
+%{?with_tests:%{__perl} Build test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+%{__perl} Build install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -76,4 +77,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Math/Currency.pm
+%dir %{perl_vendorlib}/Math/Currency
+%{perl_vendorlib}/Math/Currency/*.pm
 %{_mandir}/man3/*

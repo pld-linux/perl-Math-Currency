@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Currency
 Summary:	Math::Currency - exact currency math with formatting and rounding
-Summary(pl):	Math::Currency - dok³adne obliczenia na walutach z formatowaniem i zaokr±glaniem
+Summary(pl.UTF-8):   Math::Currency - dokÅ‚adne obliczenia na walutach z formatowaniem i zaokrÄ…glaniem
 Name:		perl-Math-Currency
 Version:	0.40
 Release:	1
@@ -39,18 +39,18 @@ initialize a currency variable, you can treat it like any number and
 the module will do the right thing. This module is a thin layer over
 Math::BigFloat which is itself a layer over Math::BigInt.
 
-%description -l pl
-Obliczenia na walutach s± w³a¶ciwie bli¿sze obliczeniom na liczbach
-ca³kowitych ni¿ zmiennoprzecinkowych. B³êdy zaokr±gleñ przy dodawaniu
-i odejmowaniu nie s± dozwolone, a dzielenie czy mno¿enie nie powinno
-daæ wiêkszej dok³adno¶ci ni¿ oryginalne warto¶ci. Wszystkie warto¶ci
-monetarne powinny byæ zaokr±glane do najbli¿szego centa czy
-czegokolwiek bêd±cego jego lokalnym odpowiednikiem.
+%description -l pl.UTF-8
+Obliczenia na walutach sÄ… wÅ‚aÅ›ciwie bliÅ¼sze obliczeniom na liczbach
+caÅ‚kowitych niÅ¼ zmiennoprzecinkowych. BÅ‚Ä™dy zaokrÄ…gleÅ„ przy dodawaniu
+i odejmowaniu nie sÄ… dozwolone, a dzielenie czy mnoÅ¼enie nie powinno
+daÄ‡ wiÄ™kszej dokÅ‚adnoÅ›ci niÅ¼ oryginalne wartoÅ›ci. Wszystkie wartoÅ›ci
+monetarne powinny byÄ‡ zaokrÄ…glane do najbliÅ¼szego centa czy
+czegokolwiek bÄ™dÄ…cego jego lokalnym odpowiednikiem.
 
-Wszystkie zwyk³e operacje matematyczne s± przeci±¿one, wiêc po
-zainicjalizowaniu zmiennej monetarnej mo¿na j± traktowaæ jak ka¿d±
-liczbê, a modu³ zrobi to co trzeba. Ten modu³ jest cienk± warstw±
-osadzon± na Math::BigFloat, który z kolei jest warstw± na
+Wszystkie zwykÅ‚e operacje matematyczne sÄ… przeciÄ…Å¼one, wiÄ™c po
+zainicjalizowaniu zmiennej monetarnej moÅ¼na jÄ… traktowaÄ‡ jak kaÅ¼dÄ…
+liczbÄ™, a moduÅ‚ zrobi to co trzeba. Ten moduÅ‚ jest cienkÄ… warstwÄ…
+osadzonÄ… na Math::BigFloat, ktÃ³ry z kolei jest warstwÄ… na
 Math::BigInt.
 
 %prep

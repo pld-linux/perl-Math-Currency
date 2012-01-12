@@ -8,12 +8,12 @@
 Summary:	Math::Currency - exact currency math with formatting and rounding
 Summary(pl.UTF-8):	Math::Currency - dokładne obliczenia na walutach z formatowaniem i zaokrąglaniem
 Name:		perl-Math-Currency
-Version:	0.46
+Version:	0.47
 Release:	1
 License:	GPL v1+ or Artistic except commercial distribution on CD-ROM etc.
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f56b98a4f4c3fa19cd402e8e0aa0dad5
+# Source0-md5:	545e37f755c50385df2dec5b8d55239b
 BuildRequires:	perl-Math-BigInt
 BuildRequires:	perl(Math::BigFloat) >= 1.27
 BuildRequires:	perl-Module-Build

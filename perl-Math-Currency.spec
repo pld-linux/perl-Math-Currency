@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Math
 %define		pnam	Currency
+%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Currency - exact currency math with formatting and rounding
 Summary(pl.UTF-8):	Math::Currency - dokładne obliczenia na walutach z formatowaniem i zaokrąglaniem
 Name:		perl-Math-Currency
@@ -14,15 +14,16 @@ License:	GPL v1+ or Artistic except commercial distribution on CD-ROM etc.
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	545e37f755c50385df2dec5b8d55239b
-BuildRequires:	perl-Math-BigInt
+URL:		http://search.cpan.org/dist/Math-Currency/
 BuildRequires:	perl(Math::BigFloat) >= 1.27
+BuildRequires:	perl-Math-BigInt
 BuildRequires:	perl-Module-Build
-%if %{with tests}
-BuildRequires:	perl-Test-Simple
-BuildRequires:	perl(Test::More) >= 0.02
-%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl(Test::More) >= 0.02
+BuildRequires:	perl-Test-Simple
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

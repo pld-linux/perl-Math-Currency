@@ -4,7 +4,6 @@
 
 %define		pdir	Math
 %define		pnam	Currency
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Currency - exact currency math with formatting and rounding
 Summary(pl.UTF-8):	Math::Currency - dokładne obliczenia na walutach z formatowaniem i zaokrąglaniem
 Name:		perl-Math-Currency
